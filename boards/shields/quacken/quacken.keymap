@@ -1,7 +1,38 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define TAPPING_TERM 150
+
+/*  Homerow Mods */
+#define HRM_A &hrm LGUI A
+#define HRM_S &hrm LALT S
+#define HRM_D &hrm LSHIFT D
+#define HRM_F &hrm LCTRL F
+#define HRM_H &hrm LCTRL H
+#define HRM_J &hrm RSHIFT J
+#define HRM_K &hrm LALT K
+#define HRM_L &hrm LGUI L
+
+&mt {
+    tapping-term-ms = <TAPPING_TERM>;
+};
+
+&lt {
+    tapping-term-ms = <TAPPING_TERM>;
+    flavor = "hold-preferred";
+};
+
 / {
+    behaviors {
+        hrm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -9,8 +40,11 @@
             display-name = "Base";
             bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp ENTER
+   &kp ESC   HRM_A HRM_S HRM_D HRM_F &kp G   HRM_H HRM_J  HRM_K     HRM_L   &kp SEMI &kp ENTER
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+          &lt 1 SPACE &lt 2 ENTER &kp LSHFT    &kp BSPC &mt RALT SPACE &lt 1 RALT
+            >;
+        };
                   &kp LALT &kp LCTL &kp LGUI   &mo 1 &kp SPACE &kp RALT
             >;
         };
