@@ -39,30 +39,30 @@
         default_layer {
             display-name = "Base";
             bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp ESC   HRM_A HRM_S HRM_D HRM_F &kp G   HRM_H HRM_J  HRM_K     HRM_L   &kp SEMI &kp ENTER
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-          &lt 1 SPACE &lt 2 ENTER &kp LSHFT    &kp BSPC &mt RALT SPACE &lt 1 RALT
+                &kp TAB   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+                &kp ESC   HRM_A HRM_S HRM_D HRM_F &kp G     HRM_H HRM_J  HRM_K     HRM_L   &kp SEMI &kp ENTER
+                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+                       &lt 1 SPACE &lt 2 ENTER &kp LSHFT    &kp BSPC &mt RALT SPACE &lt 1 RALT
             >;
         };
 
         nav_num {
             display-name = "Nav-Num";
             bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LALT &kp LCTL &kp LGUI   &mo 1 &kp SPACE &kp RALT
+                &kp TAB   &kp RA(L) &kp N7 &kp N8 &kp N9 &kp GRAVE &kp HOME &kp PAGE_DOWN &kp PAGE_UP  &kp END    &kp PSCRN &kp BSPC
+                &kp LCTRL &kp LS(N) &kp N4 &kp N5 &kp N6 &kp N0    &kp LEFT &kp DOWN      &kp UP       &kp RIGHT  &kp BSPC  &kp SQT
+                &kp LSHFT &kp DOT   &kp N1 &kp N2 &kp N3 &kp N     &kp K_PP &kp K_VOL_DN  &kp K_VOL_UP &kp K_MUTE &kp DEL   &kp ESC
+                                           &mo 2 &kp NUBS &kp LGUI &mo 2 &kp NUBS &mo 2
             >;
         };
 
         fun_mouse {
             display-name = "Fun-Mouse";
             bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LALT &kp LCTL &kp LGUI   &mo 1 &kp SPACE &kp RALT
+                &bootloader       &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I     &kp O   &kp P    &kp BSPC
+                &sys_reset        &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K     &kp L   &kp SEMI &kp SQT
+                &kp         LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
+                                   &kp LALT &kp LCTL &kp LGUI      &mo 1 &kp SPACE &kp RALT
             >;
         };
     };
