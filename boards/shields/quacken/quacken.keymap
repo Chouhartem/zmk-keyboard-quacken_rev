@@ -74,10 +74,10 @@
         compat {
             display-name = "Compat";
             bindings = <
-                &kp TAB   &kp Q &kp C &kp O     &kp P &kp W   &kp J     &kp M &kp D &to 0         &kp Y &kp BSPC
-                &kp ESC   &kp A &kp S &kp E     &kp N &kp F   &kp L     &kp R &kp T &kp I         &kp U &kp ENTER
-                &kp LSHFT &kp Z &kp X &kp MINUS &kp V &kp B   &kp COLON &kp H &kp G &kp SEMICOLON &kp K &kp RSHIFT
-                        &lt 1 SPACE &lt 2 ENTER &kp LSHFT     &kp BSPC &mt RALT ESC  &lt 1 RALT
+                &kp TAB   &kp Q &kp C &kp O     &kp P &kp W   &kp J     &kp M &kp D &to 0         &kp Y &kp DEL
+                &kp ESC   &kp A &kp S &kp E     &kp N &kp F   &kp L     &kp R &kp T &kp I         &kp U &kp BSPC
+                &kp LSHFT &kp Z &kp X &kp MINUS &kp V &kp B   &kp COLON &kp H &kp G &kp SEMICOLON &kp K &kp ENTER
+                             &kp SPACE &kp ENTER &kp LSHFT    &kp BSPC &mt RALT ESC  &kp TAB
             >;
         };
 
