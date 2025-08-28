@@ -4,14 +4,14 @@
 #define TAPPING_TERM 150
 
 /*  Homerow Mods */
-#define HRM_A &hrm LGUI A
-#define HRM_S &hrm LALT S
-#define HRM_D &hrm LSHIFT D
-#define HRM_F &hrm LCTRL F
-#define HRM_H &hrm LCTRL H
-#define HRM_J &hrm RSHIFT J
-#define HRM_K &hrm LALT K
-#define HRM_L &hrm LGUI L
+#define HRM_A    &hrm LGUI A
+#define HRM_S    &hrm LALT S
+#define HRM_D    &hrm LSHIFT D
+#define HRM_F    &hrm LCTRL F
+#define HRM_J    &hrm LCTRL J
+#define HRM_K    &hrm RSHIFT K
+#define HRM_L    &hrm LALT L
+#define HRM_SEMI &hrm LGUI SEMI
 
 &mt {
     tapping-term-ms = <TAPPING_TERM>;
@@ -40,7 +40,7 @@
             display-name = "Base";
             bindings = <
                 &kp TAB   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-                &kp ESC   HRM_A HRM_S HRM_D HRM_F &kp G     HRM_H HRM_J  HRM_K     HRM_L   &kp SEMI &kp ENTER
+                &kp ESC   HRM_A HRM_S HRM_D HRM_F &kp G     &kp H HRM_J  HRM_K     HRM_L   HRM_SEMI &kp ENTER
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
                        &lt 1 SPACE &lt 2 ENTER &kp LSHFT    &kp BSPC &mt RALT ESC  &lt 1 RALT
             >;
