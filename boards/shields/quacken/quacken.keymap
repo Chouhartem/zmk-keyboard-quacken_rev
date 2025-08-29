@@ -24,7 +24,7 @@
 
 &lt {
     tapping-term-ms = <TAPPING_TERM>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
 };
 
 / {
