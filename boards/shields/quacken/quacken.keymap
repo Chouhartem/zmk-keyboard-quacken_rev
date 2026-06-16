@@ -7,7 +7,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
-#define TAPPING_TERM 150
+#define TAPPING_TERM 135
 
 /*  Homerow Mods */
 #define HRM_A    &hrm LGUI A
